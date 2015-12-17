@@ -1,0 +1,70 @@
+20/10/2009 10:48:33.51 00000772 **DEBUG**  CSTUNServer::Start             Starting STUN server.
+20/10/2009 10:48:34.06 00000880 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:34.07 00000880 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:34.08 00000880 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( src host 217.125.242.39 )  and ( dst host 169.0.209.22 or dst host 169.0.208.27 ) .
+20/10/2009 10:48:34.09 00000880 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from 217.125.242.39  to 169.0.209.22 169.0.208.27 .
+20/10/2009 10:48:34.10 00000880 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x000314
+20/10/2009 10:48:37.01 00000336 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:48:37.03 00000336 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 38 00 45 00 00 64 11 10 B4 D9 7D F2 27 A9 00 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 68 9F 06 00 68 9F 06 00 F8 5F 00 00 F8 5F 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:48:37.05 00000336 **INFO **  CCaptureApi::realThreadProc    From 217.125.242.39:10000 To 169.0.209.22:3478
+20/10/2009 10:48:37.07 00000880 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:37.08 00000880 **DEBUG**  CSTUNMsg::Trace                BINDING-REQUEST
+20/10/2009 10:48:37.08 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:37.09 00000880 **DEBUG**  CSTUNAttribute::Trace          CHANGE_REQUEST
+20/10/2009 10:48:37.10 00000880 **DEBUG**  CSTUNAttribute::Trace          Change IP: 0 Change Port: 0
+20/10/2009 10:48:37.11 00000880 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:37.13 00000880 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:37.14 00000880 **DEBUG**  CSTUNMsg::Trace                BINDING-RESPONSE
+20/10/2009 10:48:37.14 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:37.15 00000880 **DEBUG**  CSTUNAttribute::Trace          MAPPED_ADDRESS
+20/10/2009 10:48:37.16 00000880 **DEBUG**  CSTUNAttribute::Trace          217.125.242.39.10000
+20/10/2009 10:48:37.17 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:37.18 00000880 **DEBUG**  CSTUNAttribute::Trace          SOURCE_ADDRESS
+20/10/2009 10:48:37.19 00000880 **DEBUG**  CSTUNAttribute::Trace          169.0.209.22.3478
+20/10/2009 10:48:37.20 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:37.21 00000880 **DEBUG**  CSTUNAttribute::Trace          CHANGED_ADDRESS
+20/10/2009 10:48:37.22 00000880 **DEBUG**  CSTUNAttribute::Trace          169.0.208.27.3479
+20/10/2009 10:48:37.23 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:37.24 00000880 **DEBUG**  CSTUNAttribute::Trace          XOR_MAPPED_ADDRESS
+20/10/2009 10:48:37.25 00000880 **DEBUG**  CSTUNAttribute::Trace          177.226.244.39.47224
+20/10/2009 10:48:37.26 00000880 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:37.27 00000880 **DEBUG**  CRawSocket::Send               HANDLE 0x000314 From 169.0.209.22:3478 to 217.125.242.39:10000
+20/10/2009 10:48:37.28 00000880 **MSGSN**  CRawSocket::Send               45 00 60 00 E1 10 00 00 64 11 00 00 A9 00 D1 16 D9 7D F2 27 0D 96 27 10 00 4C 00 00 01 01 00 30 68 9F 06 00 68 9F 06 00 F8 5F 00 00 F8 5F 00 00 00 01 00 08 00 01 27 10 D9 7D F2 27 00 04 00 08 00 01 0D 96 A9 00 D1 16 00 05 00 08 00 01 0D 97 A9 00 D0 1B 80 20 00 08 00 01 B8 78 B1 E2 F4 27 
+20/10/2009 10:48:38.46 00000336 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:48:38.47 00000336 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 38 00 49 00 00 64 11 10 B0 D9 7D F2 27 A9 00 D1 16 00 00 0D 96 00 24 00 00 00 01 00 08 14 A5 06 00 14 A5 06 00 FF 5F 00 00 FF 5F 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:48:38.48 00000336 **INFO **  CCaptureApi::realThreadProc    From 217.125.242.39:0 To 169.0.209.22:3478
+20/10/2009 10:48:38.50 00000880 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:38.50 00000880 **DEBUG**  CSTUNMsg::Trace                BINDING-REQUEST
+20/10/2009 10:48:38.51 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:38.52 00000880 **DEBUG**  CSTUNAttribute::Trace          CHANGE_REQUEST
+20/10/2009 10:48:38.53 00000880 **DEBUG**  CSTUNAttribute::Trace          Change IP: 0 Change Port: 0
+20/10/2009 10:48:38.54 00000880 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:38.55 00000880 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:38.56 00000880 **DEBUG**  CSTUNMsg::Trace                BINDING-RESPONSE
+20/10/2009 10:48:38.57 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:38.58 00000880 **DEBUG**  CSTUNAttribute::Trace          MAPPED_ADDRESS
+20/10/2009 10:48:38.90 00000880 **DEBUG**  CSTUNAttribute::Trace          217.125.242.39.0
+20/10/2009 10:48:38.91 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:38.92 00000880 **DEBUG**  CSTUNAttribute::Trace          SOURCE_ADDRESS
+20/10/2009 10:48:38.93 00000880 **DEBUG**  CSTUNAttribute::Trace          169.0.209.22.3478
+20/10/2009 10:48:38.94 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:38.95 00000880 **DEBUG**  CSTUNAttribute::Trace          CHANGED_ADDRESS
+20/10/2009 10:48:38.96 00000880 **DEBUG**  CSTUNAttribute::Trace          169.0.208.27.3479
+20/10/2009 10:48:38.97 00000880 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:38.98 00000880 **DEBUG**  CSTUNAttribute::Trace          XOR_MAPPED_ADDRESS
+20/10/2009 10:48:38.99 00000880 **DEBUG**  CSTUNAttribute::Trace          205.216.244.39.42260
+20/10/2009 10:48:39.00 00000880 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:39.01 00000880 **DEBUG**  CRawSocket::Send               HANDLE 0x000314 From 169.0.209.22:3478 to 217.125.242.39:0
+20/10/2009 10:48:39.02 00000880 **MSGSN**  CRawSocket::Send               45 00 60 00 E1 10 00 00 64 11 00 00 A9 00 D1 16 D9 7D F2 27 0D 96 00 00 00 4C 00 00 01 01 00 30 14 A5 06 00 14 A5 06 00 FF 5F 00 00 FF 5F 00 00 00 01 00 08 00 01 00 00 D9 7D F2 27 00 04 00 08 00 01 0D 96 A9 00 D1 16 00 05 00 08 00 01 0D 97 A9 00 D0 1B 80 20 00 08 00 01 A5 14 CD D8 F4 27 
+20/10/2009 10:48:45.69 00000772 **DEBUG**  CSTUNServer::Stop              Stoping first STUN server.
+20/10/2009 10:48:48.07 00000880 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x000314
+20/10/2009 10:48:48.08 00000880 **DEBUG**  CCaptureApi::Stop              Stoping capture from 217.125.242.39  to 169.0.209.22 169.0.208.27 .
+20/10/2009 10:48:54.38 00000912 **DEBUG**  CSTUNServer::Start             Starting STUN server.
+20/10/2009 10:48:54.88 00000916 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:54.89 00000916 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:54.90 00000916 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( src host 217.125.242.39 )  and ( dst host 169.0.209.22 or dst host 169.0.208.27 ) .
+20/10/2009 10:48:54.91 00000916 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from 217.125.242.39  to 169.0.209.22 169.0.208.27 .
+20/10/2009 10:48:54.92 00000916 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x0003C0
+20/10/2009 10:49:33.61 00000912 **DEBUG**  CSTUNServer::Stop              Stoping first STUN server.
+20/10/2009 10:49:34.12 00000916 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x0003C0
+20/10/2009 10:49:34.13 00000916 **DEBUG**  CCaptureApi::Stop              Stoping capture from 217.125.242.39  to 169.0.209.22 169.0.208.27 .

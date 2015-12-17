@@ -1,0 +1,73 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Util", "Util\Util.vcproj", "{691CDAA6-7C18-4CE1-9039-EEBF0E453C59}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RawSocket", "RawSocket\RawSocket.vcproj", "{89D98861-4207-41D2-8724-2DDF35DA2075}"
+	ProjectSection(ProjectDependencies) = postProject
+		{691CDAA6-7C18-4CE1-9039-EEBF0E453C59} = {691CDAA6-7C18-4CE1-9039-EEBF0E453C59}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Capture", "Capture\Capture.vcproj", "{A953297C-FFF1-4AD0-B0AF-137C64993406}"
+	ProjectSection(ProjectDependencies) = postProject
+		{691CDAA6-7C18-4CE1-9039-EEBF0E453C59} = {691CDAA6-7C18-4CE1-9039-EEBF0E453C59}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stun", "Stun\Stun.vcproj", "{94B1CD36-4B5F-4C4C-90E1-39E87CD47CBD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A953297C-FFF1-4AD0-B0AF-137C64993406} = {A953297C-FFF1-4AD0-B0AF-137C64993406}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NATReq", "NATReq\NATReq.vcproj", "{256914F9-7B30-4D3E-8E15-467538AEC23F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{89D98861-4207-41D2-8724-2DDF35DA2075} = {89D98861-4207-41D2-8724-2DDF35DA2075}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NATSim", "NATSim\NATSim.vcproj", "{F1FDF03B-AC2A-4B15-B97F-97FCEBC690C4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NATSimulator", "NATSimulator\NATSimulator.vcproj", "{A94894E2-F208-42EA-B559-7F71E882A104}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{691CDAA6-7C18-4CE1-9039-EEBF0E453C59}.Debug.ActiveCfg = Debug|Win32
+		{691CDAA6-7C18-4CE1-9039-EEBF0E453C59}.Debug.Build.0 = Debug|Win32
+		{691CDAA6-7C18-4CE1-9039-EEBF0E453C59}.Release.ActiveCfg = Release|Win32
+		{691CDAA6-7C18-4CE1-9039-EEBF0E453C59}.Release.Build.0 = Release|Win32
+		{89D98861-4207-41D2-8724-2DDF35DA2075}.Debug.ActiveCfg = Debug|Win32
+		{89D98861-4207-41D2-8724-2DDF35DA2075}.Debug.Build.0 = Debug|Win32
+		{89D98861-4207-41D2-8724-2DDF35DA2075}.Release.ActiveCfg = Release|Win32
+		{89D98861-4207-41D2-8724-2DDF35DA2075}.Release.Build.0 = Release|Win32
+		{A953297C-FFF1-4AD0-B0AF-137C64993406}.Debug.ActiveCfg = Debug|Win32
+		{A953297C-FFF1-4AD0-B0AF-137C64993406}.Debug.Build.0 = Debug|Win32
+		{A953297C-FFF1-4AD0-B0AF-137C64993406}.Release.ActiveCfg = Release|Win32
+		{A953297C-FFF1-4AD0-B0AF-137C64993406}.Release.Build.0 = Release|Win32
+		{94B1CD36-4B5F-4C4C-90E1-39E87CD47CBD}.Debug.ActiveCfg = Debug|Win32
+		{94B1CD36-4B5F-4C4C-90E1-39E87CD47CBD}.Debug.Build.0 = Debug|Win32
+		{94B1CD36-4B5F-4C4C-90E1-39E87CD47CBD}.Release.ActiveCfg = Release|Win32
+		{94B1CD36-4B5F-4C4C-90E1-39E87CD47CBD}.Release.Build.0 = Release|Win32
+		{256914F9-7B30-4D3E-8E15-467538AEC23F}.Debug.ActiveCfg = Debug|Win32
+		{256914F9-7B30-4D3E-8E15-467538AEC23F}.Debug.Build.0 = Debug|Win32
+		{256914F9-7B30-4D3E-8E15-467538AEC23F}.Release.ActiveCfg = Release|Win32
+		{256914F9-7B30-4D3E-8E15-467538AEC23F}.Release.Build.0 = Release|Win32
+		{F1FDF03B-AC2A-4B15-B97F-97FCEBC690C4}.Debug.ActiveCfg = Debug|Win32
+		{F1FDF03B-AC2A-4B15-B97F-97FCEBC690C4}.Debug.Build.0 = Debug|Win32
+		{F1FDF03B-AC2A-4B15-B97F-97FCEBC690C4}.Release.ActiveCfg = Release|Win32
+		{F1FDF03B-AC2A-4B15-B97F-97FCEBC690C4}.Release.Build.0 = Release|Win32
+		{A94894E2-F208-42EA-B559-7F71E882A104}.Debug.ActiveCfg = Debug|Win32
+		{A94894E2-F208-42EA-B559-7F71E882A104}.Debug.Build.0 = Debug|Win32
+		{A94894E2-F208-42EA-B559-7F71E882A104}.Release.ActiveCfg = Release|Win32
+		{A94894E2-F208-42EA-B559-7F71E882A104}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

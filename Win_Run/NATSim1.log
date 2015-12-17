@@ -1,0 +1,110 @@
+20/10/2009 10:48:33.12 00000772 **INFO **  CNATSim::readNatConfig         Mapping Behavior EndPointIndependent.
+20/10/2009 10:48:33.16 00000772 **INFO **  CNATSim::readNatConfig         Filtering Behavior AddressIndependent.
+20/10/2009 10:48:33.19 00000772 **INFO **  CNATSim::readNatConfig         Timeout 300000.
+20/10/2009 10:48:33.23 00000772 **INFO **  CNATSim::readNatConfig         Incomming Refresh Timeout false.
+20/10/2009 10:48:33.28 00000772 **INFO **  CNATSim::readNatConfig         Port Preservation true.
+20/10/2009 10:48:33.33 00000772 **INFO **  CNATSim::readNatConfig         Port Overloading false.
+20/10/2009 10:48:33.38 00000772 **INFO **  CNATSim::readNatConfig         IP Assign Mode Paired.
+20/10/2009 10:48:33.39 00000772 **INFO **  CNATSim::Start                 Starting capture of public traffic.
+20/10/2009 10:48:33.40 00000772 **INFO **  CNATSim::Start                 Starting capture of private traffic.
+20/10/2009 10:48:33.41 00000312 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:33.42 00000312 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:33.43 00000464 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:33.44 00000312 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( src host 169.0.209.22 or src host 169.0.208.27 )  and ( dst host 217.125.242.39 ) .
+20/10/2009 10:48:33.45 00000464 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:33.46 00000312 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from 169.0.209.22 169.0.208.27  to 217.125.242.39 .
+20/10/2009 10:48:33.47 00000464 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( src host 192.168.3.2 or src host 192.168.3.3 )  and ( dst host 169.0.209.22 or dst host 169.0.208.27 ) .
+20/10/2009 10:48:33.48 00000312 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x0002B8
+20/10/2009 10:48:33.48 00000464 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from 192.168.3.2 192.168.3.3  to 169.0.209.22 169.0.208.27 .
+20/10/2009 10:48:33.50 00000464 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x0002C8
+20/10/2009 10:48:36.91 00000544 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:48:36.92 00000544 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 38 00 44 00 00 64 11 18 B0 C0 A8 03 02 A9 00 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 68 9F 06 00 68 9F 06 00 F8 5F 00 00 F8 5F 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:48:36.93 00000544 **INFO **  CCaptureApi::realThreadProc    From 192.168.3.2:10000 To 169.0.209.22:3478
+20/10/2009 10:48:36.95 00000464 **DEBUG**  CNATSim::TreatOutgoingPacket   Inserted entry into outgoing table. From 192.168.3.2:10000 To 0.0.0.0:65536.
+20/10/2009 10:48:36.96 00000464 **DEBUG**  CNATSim::TreatOutgoingPacket   Inserted entry into incomming table. From 0.0.0.0:65536 To 217.125.242.39:10000.
+20/10/2009 10:48:36.97 00000464 **DEBUG**  CRawSocket::Send               HANDLE 0x0002C8 From 217.125.242.39:10000 to 169.0.209.22:3478
+20/10/2009 10:48:36.98 00000464 **MSGSN**  CRawSocket::Send               45 00 38 00 E1 10 00 00 64 11 00 00 D9 7D F2 27 A9 00 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 68 9F 06 00 68 9F 06 00 F8 5F 00 00 F8 5F 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:48:36.99 00000464 **INFO **  CNATSim::realThreadProcPrivate Outgoing Table
+20/10/2009 10:48:37.00 00000464 **INFO **  CNATSim::realThreadProcPrivate 
+                                                                               192.168.3.2:10000 -         0.0.0.0:65536 :  217.125.242.39:10000 :         0.0.0.0:65536 -  217.125.242.39:10000
+
+20/10/2009 10:48:37.02 00000464 **INFO **  CNATSim::realThreadProcPrivate Incomming Table
+20/10/2009 10:48:37.04 00000464 **INFO **  CNATSim::realThreadProcPrivate 
+                                                                                   0.0.0.0:65536 -  217.125.242.39:10000 :     192.168.3.2:10000 :     192.168.3.2:10000 -         0.0.0.0:65536
+
+20/10/2009 10:48:37.38 00000344 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:48:37.38 00000344 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 60 00 46 00 00 64 11 10 8B A9 00 D1 16 D9 7D F2 27 0D 96 27 10 00 4C 00 00 01 01 00 30 68 9F 06 00 68 9F 06 00 F8 5F 00 00 F8 5F 00 00 00 01 00 08 00 01 27 10 D9 7D F2 27 00 04 00 08 00 01 0D 96 A9 00 D1 16 00 05 00 08 00 01 0D 97 A9 00 D0 1B 80 20 00 08 00 01 B8 78 B1 E2 F4 27 
+20/10/2009 10:48:37.39 00000344 **INFO **  CCaptureApi::realThreadProc    From 169.0.209.22:3478 To 217.125.242.39:10000
+20/10/2009 10:48:37.41 00000312 **DEBUG**  CRawSocket::Send               HANDLE 0x0002B8 From 169.0.209.22:3478 to 192.168.3.2:10000
+20/10/2009 10:48:37.73 00000312 **MSGSN**  CRawSocket::Send               45 00 60 00 E1 10 00 00 64 11 00 00 A9 00 D1 16 C0 A8 03 02 0D 96 27 10 00 4C 00 00 01 01 00 30 68 9F 06 00 68 9F 06 00 F8 5F 00 00 F8 5F 00 00 00 01 00 08 00 01 27 10 D9 7D F2 27 00 04 00 08 00 01 0D 96 A9 00 D1 16 00 05 00 08 00 01 0D 97 A9 00 D0 1B 80 20 00 08 00 01 B8 78 B1 E2 F4 27 
+20/10/2009 10:48:37.74 00000312 **INFO **  CNATSim::realThreadProcPublic  Outgoing Table
+20/10/2009 10:48:37.75 00000312 **INFO **  CNATSim::realThreadProcPublic  
+                                                                               192.168.3.2:10000 -         0.0.0.0:65536 :  217.125.242.39:10000 :         0.0.0.0:65536 -  217.125.242.39:10000
+
+20/10/2009 10:48:37.76 00000312 **INFO **  CNATSim::realThreadProcPublic  Incomming Table
+20/10/2009 10:48:37.77 00000312 **INFO **  CNATSim::realThreadProcPublic  
+                                                                                   0.0.0.0:65536 -  217.125.242.39:10000 :     192.168.3.2:10000 :     192.168.3.2:10000 -         0.0.0.0:65536
+
+20/10/2009 10:48:38.34 00000544 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:48:38.35 00000544 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 38 00 48 00 00 64 11 18 AB C0 A8 03 03 A9 00 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 14 A5 06 00 14 A5 06 00 FF 5F 00 00 FF 5F 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:48:38.36 00000544 **INFO **  CCaptureApi::realThreadProc    From 192.168.3.3:10000 To 169.0.209.22:3478
+20/10/2009 10:48:38.37 00000464 **DEBUG**  CNATSim::TreatOutgoingPacket   Inserted entry into outgoing table. From 192.168.3.3:10000 To 0.0.0.0:65536.
+20/10/2009 10:48:38.38 00000464 **DEBUG**  CNATSim::TreatOutgoingPacket   Inserted entry into incomming table. From 0.0.0.0:65536 To 217.125.242.39:0.
+20/10/2009 10:48:38.39 00000464 **DEBUG**  CRawSocket::Send               HANDLE 0x0002C8 From 217.125.242.39:0 to 169.0.209.22:3478
+20/10/2009 10:48:38.39 00000464 **MSGSN**  CRawSocket::Send               45 00 38 00 E1 10 00 00 64 11 00 00 D9 7D F2 27 A9 00 D1 16 00 00 0D 96 00 24 00 00 00 01 00 08 14 A5 06 00 14 A5 06 00 FF 5F 00 00 FF 5F 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:48:38.41 00000464 **INFO **  CNATSim::realThreadProcPrivate Outgoing Table
+20/10/2009 10:48:38.41 00000464 **INFO **  CNATSim::realThreadProcPrivate 
+                                                                               192.168.3.2:10000 -         0.0.0.0:65536 :  217.125.242.39:10000 :         0.0.0.0:65536 -  217.125.242.39:10000
+                                                                               192.168.3.3:10000 -         0.0.0.0:65536 :  217.125.242.39:00000 :         0.0.0.0:65536 -  217.125.242.39:00000
+
+20/10/2009 10:48:38.42 00000464 **INFO **  CNATSim::realThreadProcPrivate Incomming Table
+20/10/2009 10:48:38.43 00000464 **INFO **  CNATSim::realThreadProcPrivate 
+                                                                                   0.0.0.0:65536 -  217.125.242.39:00000 :     192.168.3.3:10000 :     192.168.3.3:10000 -         0.0.0.0:65536
+                                                                                   0.0.0.0:65536 -  217.125.242.39:10000 :     192.168.3.2:10000 :     192.168.3.2:10000 -         0.0.0.0:65536
+
+20/10/2009 10:48:39.10 00000344 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:48:39.11 00000344 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 60 00 4A 00 00 64 11 10 87 A9 00 D1 16 D9 7D F2 27 0D 96 00 00 00 4C 00 00 01 01 00 30 14 A5 06 00 14 A5 06 00 FF 5F 00 00 FF 5F 00 00 00 01 00 08 00 01 00 00 D9 7D F2 27 00 04 00 08 00 01 0D 96 A9 00 D1 16 00 05 00 08 00 01 0D 97 A9 00 D0 1B 80 20 00 08 00 01 A5 14 CD D8 F4 27 
+20/10/2009 10:48:39.11 00000344 **INFO **  CCaptureApi::realThreadProc    From 169.0.209.22:3478 To 217.125.242.39:0
+20/10/2009 10:48:39.13 00000312 **DEBUG**  CRawSocket::Send               HANDLE 0x0002B8 From 169.0.209.22:3478 to 192.168.3.3:10000
+20/10/2009 10:48:39.14 00000312 **MSGSN**  CRawSocket::Send               45 00 60 00 E1 10 00 00 64 11 00 00 A9 00 D1 16 C0 A8 03 03 0D 96 27 10 00 4C 00 00 01 01 00 30 14 A5 06 00 14 A5 06 00 FF 5F 00 00 FF 5F 00 00 00 01 00 08 00 01 00 00 D9 7D F2 27 00 04 00 08 00 01 0D 96 A9 00 D1 16 00 05 00 08 00 01 0D 97 A9 00 D0 1B 80 20 00 08 00 01 A5 14 CD D8 F4 27 
+20/10/2009 10:48:39.15 00000312 **INFO **  CNATSim::realThreadProcPublic  Outgoing Table
+20/10/2009 10:48:39.16 00000312 **INFO **  CNATSim::realThreadProcPublic  
+                                                                               192.168.3.2:10000 -         0.0.0.0:65536 :  217.125.242.39:10000 :         0.0.0.0:65536 -  217.125.242.39:10000
+                                                                               192.168.3.3:10000 -         0.0.0.0:65536 :  217.125.242.39:00000 :         0.0.0.0:65536 -  217.125.242.39:00000
+
+20/10/2009 10:48:39.17 00000312 **INFO **  CNATSim::realThreadProcPublic  Incomming Table
+20/10/2009 10:48:39.18 00000312 **INFO **  CNATSim::realThreadProcPublic  
+                                                                                   0.0.0.0:65536 -  217.125.242.39:00000 :     192.168.3.3:10000 :     192.168.3.3:10000 -         0.0.0.0:65536
+                                                                                   0.0.0.0:65536 -  217.125.242.39:10000 :     192.168.3.2:10000 :     192.168.3.2:10000 -         0.0.0.0:65536
+
+20/10/2009 10:48:42.11 00000772 **DEBUG**  CNATSim::Stop                  Stoping capture of public traffic.
+20/10/2009 10:48:42.20 00000312 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x0002B8
+20/10/2009 10:48:42.21 00000312 **DEBUG**  CCaptureApi::Stop              Stoping capture from 169.0.209.22 169.0.208.27  to 217.125.242.39 .
+20/10/2009 10:48:42.32 00000772 **DEBUG**  CNATSim::Stop                  Stoping capture of private traffic.
+20/10/2009 10:48:44.47 00000464 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x0002C8
+20/10/2009 10:48:44.48 00000464 **DEBUG**  CCaptureApi::Stop              Stoping capture from 192.168.3.2 192.168.3.3  to 169.0.209.22 169.0.208.27 .
+20/10/2009 10:48:53.68 00000912 **INFO **  CNATSim::readNatConfig         Mapping Behavior EndPointIndependent.
+20/10/2009 10:48:53.72 00000912 **INFO **  CNATSim::readNatConfig         Filtering Behavior AddressIndependent.
+20/10/2009 10:48:53.75 00000912 **INFO **  CNATSim::readNatConfig         Timeout 300000.
+20/10/2009 10:48:53.79 00000912 **INFO **  CNATSim::readNatConfig         Incomming Refresh Timeout false.
+20/10/2009 10:48:54.15 00000912 **INFO **  CNATSim::readNatConfig         Port Preservation true.
+20/10/2009 10:48:54.20 00000912 **INFO **  CNATSim::readNatConfig         Port Overloading false.
+20/10/2009 10:48:54.25 00000912 **INFO **  CNATSim::readNatConfig         IP Assign Mode Paired.
+20/10/2009 10:48:54.26 00000912 **INFO **  CNATSim::Start                 Starting capture of public traffic.
+20/10/2009 10:48:54.27 00000912 **INFO **  CNATSim::Start                 Starting capture of private traffic.
+20/10/2009 10:48:54.28 00000888 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:54.29 00000888 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:54.30 00000772 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:54.31 00000888 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( src host 169.0.209.22 or src host 169.0.208.27 )  and ( dst host 217.125.242.39 ) .
+20/10/2009 10:48:54.32 00000772 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:54.33 00000888 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from 169.0.209.22 169.0.208.27  to 217.125.242.39 .
+20/10/2009 10:48:54.34 00000772 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( src host 192.168.3.2 or src host 192.168.3.3 )  and ( dst host 169.0.209.22 or dst host 169.0.208.27 ) .
+20/10/2009 10:48:54.35 00000888 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x0002FC
+20/10/2009 10:48:54.36 00000772 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from 192.168.3.2 192.168.3.3  to 169.0.209.22 169.0.208.27 .
+20/10/2009 10:48:54.37 00000772 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x0002EC
+20/10/2009 10:49:30.42 00000912 **DEBUG**  CNATSim::Stop                  Stoping capture of public traffic.
+20/10/2009 10:49:30.53 00000888 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x0002FC
+20/10/2009 10:49:30.53 00000888 **DEBUG**  CCaptureApi::Stop              Stoping capture from 169.0.209.22 169.0.208.27  to 217.125.242.39 .
+20/10/2009 10:49:30.55 00000772 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x0002EC
+20/10/2009 10:49:30.55 00000772 **DEBUG**  CCaptureApi::Stop              Stoping capture from 192.168.3.2 192.168.3.3  to 169.0.209.22 169.0.208.27 .
+20/10/2009 10:49:30.59 00000912 **DEBUG**  CNATSim::Stop                  Stoping capture of private traffic.

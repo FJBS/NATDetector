@@ -1,0 +1,208 @@
+20/10/2009 10:48:36.53 00000772 **DEBUG**  CNATReq3::Test                 Starting port overloading test...
+20/10/2009 10:48:36.75 00000920 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:36.76 00000920 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:36.77 00000920 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( dst host 192.168.3.2 )  and ( dst port 10000 ).
+20/10/2009 10:48:36.78 00000920 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from all to 192.168.3.2 .
+20/10/2009 10:48:36.79 00000920 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x000450
+20/10/2009 10:48:36.80 00000920 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:36.81 00000920 **DEBUG**  CSTUNMsg::Trace                BINDING-REQUEST
+20/10/2009 10:48:36.82 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:36.83 00000920 **DEBUG**  CSTUNAttribute::Trace          CHANGE_REQUEST
+20/10/2009 10:48:36.84 00000920 **DEBUG**  CSTUNAttribute::Trace          Change IP: 0 Change Port: 0
+20/10/2009 10:48:36.85 00000920 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:36.86 00000920 **DEBUG**  CRawSocket::Send               HANDLE 0x000450 From 192.168.3.2:10000 to 169.0.209.22:3478
+20/10/2009 10:48:36.87 00000920 **MSGSN**  CRawSocket::Send               45 00 38 00 E1 10 00 00 64 11 00 00 C0 A8 03 02 A9 00 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 68 9F 06 00 68 9F 06 00 F8 5F 00 00 F8 5F 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:48:37.79 00000924 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:48:37.80 00000924 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 60 00 47 00 00 64 11 18 85 A9 00 D1 16 C0 A8 03 02 0D 96 27 10 00 4C 00 00 01 01 00 30 68 9F 06 00 68 9F 06 00 F8 5F 00 00 F8 5F 00 00 00 01 00 08 00 01 27 10 D9 7D F2 27 00 04 00 08 00 01 0D 96 A9 00 D1 16 00 05 00 08 00 01 0D 97 A9 00 D0 1B 80 20 00 08 00 01 B8 78 B1 E2 F4 27 
+20/10/2009 10:48:37.81 00000924 **INFO **  CCaptureApi::realThreadProc    From 169.0.209.22:3478 To 192.168.3.2:10000
+20/10/2009 10:48:37.83 00000920 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:37.84 00000920 **DEBUG**  CSTUNMsg::Trace                BINDING-RESPONSE
+20/10/2009 10:48:37.85 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:37.86 00000920 **DEBUG**  CSTUNAttribute::Trace          MAPPED_ADDRESS
+20/10/2009 10:48:37.87 00000920 **DEBUG**  CSTUNAttribute::Trace          217.125.242.39.10000
+20/10/2009 10:48:37.88 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:37.89 00000920 **DEBUG**  CSTUNAttribute::Trace          SOURCE_ADDRESS
+20/10/2009 10:48:37.90 00000920 **DEBUG**  CSTUNAttribute::Trace          169.0.209.22.3478
+20/10/2009 10:48:37.91 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:37.92 00000920 **DEBUG**  CSTUNAttribute::Trace          CHANGED_ADDRESS
+20/10/2009 10:48:37.93 00000920 **DEBUG**  CSTUNAttribute::Trace          169.0.208.27.3479
+20/10/2009 10:48:37.94 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:37.95 00000920 **DEBUG**  CSTUNAttribute::Trace          XOR_MAPPED_ADDRESS
+20/10/2009 10:48:37.96 00000920 **DEBUG**  CSTUNAttribute::Trace          177.226.244.39.47224
+20/10/2009 10:48:37.97 00000920 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:37.98 00000920 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x000450
+20/10/2009 10:48:37.99 00000920 **DEBUG**  CCaptureApi::Stop              Stoping capture from all to 192.168.3.2 .
+20/10/2009 10:48:38.20 00000920 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:38.21 00000920 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:38.22 00000920 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( dst host 192.168.3.3 )  and ( dst port 10000 ).
+20/10/2009 10:48:38.23 00000920 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from all to 192.168.3.3 .
+20/10/2009 10:48:38.24 00000920 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x000420
+20/10/2009 10:48:38.25 00000920 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:38.26 00000920 **DEBUG**  CSTUNMsg::Trace                BINDING-REQUEST
+20/10/2009 10:48:38.27 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:38.28 00000920 **DEBUG**  CSTUNAttribute::Trace          CHANGE_REQUEST
+20/10/2009 10:48:38.28 00000920 **DEBUG**  CSTUNAttribute::Trace          Change IP: 0 Change Port: 0
+20/10/2009 10:48:38.29 00000920 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:38.31 00000920 **DEBUG**  CRawSocket::Send               HANDLE 0x000420 From 192.168.3.3:10000 to 169.0.209.22:3478
+20/10/2009 10:48:38.32 00000920 **MSGSN**  CRawSocket::Send               45 00 38 00 E1 10 00 00 64 11 00 00 C0 A8 03 03 A9 00 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 14 A5 06 00 14 A5 06 00 FF 5F 00 00 FF 5F 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:48:39.24 00000924 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:48:39.25 00000924 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 60 00 4B 00 00 64 11 18 80 A9 00 D1 16 C0 A8 03 03 0D 96 27 10 00 4C 00 00 01 01 00 30 14 A5 06 00 14 A5 06 00 FF 5F 00 00 FF 5F 00 00 00 01 00 08 00 01 00 00 D9 7D F2 27 00 04 00 08 00 01 0D 96 A9 00 D1 16 00 05 00 08 00 01 0D 97 A9 00 D0 1B 80 20 00 08 00 01 A5 14 CD D8 F4 27 
+20/10/2009 10:48:39.25 00000924 **INFO **  CCaptureApi::realThreadProc    From 169.0.209.22:3478 To 192.168.3.3:10000
+20/10/2009 10:48:39.27 00000920 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:39.28 00000920 **DEBUG**  CSTUNMsg::Trace                BINDING-RESPONSE
+20/10/2009 10:48:39.29 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:39.30 00000920 **DEBUG**  CSTUNAttribute::Trace          MAPPED_ADDRESS
+20/10/2009 10:48:39.30 00000920 **DEBUG**  CSTUNAttribute::Trace          217.125.242.39.0
+20/10/2009 10:48:39.31 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:39.32 00000920 **DEBUG**  CSTUNAttribute::Trace          SOURCE_ADDRESS
+20/10/2009 10:48:39.33 00000920 **DEBUG**  CSTUNAttribute::Trace          169.0.209.22.3478
+20/10/2009 10:48:39.34 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:39.35 00000920 **DEBUG**  CSTUNAttribute::Trace          CHANGED_ADDRESS
+20/10/2009 10:48:39.36 00000920 **DEBUG**  CSTUNAttribute::Trace          169.0.208.27.3479
+20/10/2009 10:48:39.37 00000920 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:39.38 00000920 **DEBUG**  CSTUNAttribute::Trace          XOR_MAPPED_ADDRESS
+20/10/2009 10:48:39.39 00000920 **DEBUG**  CSTUNAttribute::Trace          205.216.244.39.42260
+20/10/2009 10:48:39.40 00000920 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:39.41 00000920 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x000420
+20/10/2009 10:48:39.42 00000920 **DEBUG**  CCaptureApi::Stop              Stoping capture from all to 192.168.3.3 .
+20/10/2009 10:48:39.46 00000772 **ERROR**  CNATReq3::Test                 NAT with Port Preservation.
+20/10/2009 10:48:39.47 00000772 **ERROR**  CNATReq3::Test                  NAT without Port Overloading.
+20/10/2009 10:48:39.48 00000772 **DEBUG**  CNATReq3::Test                 Terminating port overloading test...
+
+20/10/2009 10:48:57.13 00000912 **DEBUG**  CNATReq3::Test                 Starting port overloading test...
+20/10/2009 10:48:57.79 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:57.80 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:57.81 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( dst host 192.168.4.2 )  and ( dst port 10000 ).
+20/10/2009 10:48:57.82 00000908 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from all to 192.168.4.2 .
+20/10/2009 10:48:57.83 00000908 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x000434
+20/10/2009 10:48:57.84 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:57.85 00000908 **DEBUG**  CSTUNMsg::Trace                BINDING-REQUEST
+20/10/2009 10:48:57.86 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:57.86 00000908 **DEBUG**  CSTUNAttribute::Trace          CHANGE_REQUEST
+20/10/2009 10:48:57.87 00000908 **DEBUG**  CSTUNAttribute::Trace          Change IP: 0 Change Port: 0
+20/10/2009 10:48:57.88 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:57.89 00000908 **DEBUG**  CRawSocket::Send               HANDLE 0x000434 From 192.168.4.2:10000 to 169.1.209.22:3478
+20/10/2009 10:48:57.90 00000908 **MSGSN**  CRawSocket::Send               45 00 38 00 E1 10 00 00 64 11 00 00 C0 A8 04 02 A9 01 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 98 F1 06 00 98 F1 06 00 3D 60 00 00 3D 60 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:48:58.74 00000344 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:48:58.75 00000344 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 60 00 4F 00 00 64 11 17 7C A9 01 D1 16 C0 A8 04 02 0D 96 27 10 00 4C 00 00 01 01 00 30 98 F1 06 00 98 F1 06 00 3D 60 00 00 3D 60 00 00 00 01 00 08 00 01 27 10 D9 7E F2 27 00 04 00 08 00 01 0D 96 A9 01 D1 16 00 05 00 08 00 01 0D 97 A9 01 D0 1B 80 20 00 08 00 01 D6 88 41 8F F4 27 
+20/10/2009 10:48:58.77 00000344 **INFO **  CCaptureApi::realThreadProc    From 169.1.209.22:3478 To 192.168.4.2:10000
+20/10/2009 10:48:58.79 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:58.81 00000908 **DEBUG**  CSTUNMsg::Trace                BINDING-RESPONSE
+20/10/2009 10:48:58.82 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:58.83 00000908 **DEBUG**  CSTUNAttribute::Trace          MAPPED_ADDRESS
+20/10/2009 10:48:58.84 00000908 **DEBUG**  CSTUNAttribute::Trace          217.126.242.39.10000
+20/10/2009 10:48:58.85 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:58.86 00000908 **DEBUG**  CSTUNAttribute::Trace          SOURCE_ADDRESS
+20/10/2009 10:48:58.87 00000908 **DEBUG**  CSTUNAttribute::Trace          169.1.209.22.3478
+20/10/2009 10:48:58.88 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:58.89 00000908 **DEBUG**  CSTUNAttribute::Trace          CHANGED_ADDRESS
+20/10/2009 10:48:58.90 00000908 **DEBUG**  CSTUNAttribute::Trace          169.1.208.27.3479
+20/10/2009 10:48:58.91 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:58.92 00000908 **DEBUG**  CSTUNAttribute::Trace          XOR_MAPPED_ADDRESS
+20/10/2009 10:48:58.93 00000908 **DEBUG**  CSTUNAttribute::Trace          65.143.244.39.54920
+20/10/2009 10:48:58.94 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:58.96 00000908 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x000434
+20/10/2009 10:48:58.97 00000908 **DEBUG**  CCaptureApi::Stop              Stoping capture from all to 192.168.4.2 .
+20/10/2009 10:48:59.39 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:48:59.40 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:48:59.42 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( dst host 192.168.4.3 )  and ( dst port 10000 ).
+20/10/2009 10:48:59.42 00000908 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from all to 192.168.4.3 .
+20/10/2009 10:48:59.43 00000908 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x000460
+20/10/2009 10:48:59.44 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:59.45 00000908 **DEBUG**  CSTUNMsg::Trace                BINDING-REQUEST
+20/10/2009 10:48:59.46 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:48:59.47 00000908 **DEBUG**  CSTUNAttribute::Trace          CHANGE_REQUEST
+20/10/2009 10:48:59.48 00000908 **DEBUG**  CSTUNAttribute::Trace          Change IP: 0 Change Port: 0
+20/10/2009 10:48:59.49 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:48:59.50 00000908 **DEBUG**  CRawSocket::Send               HANDLE 0x000460 From 192.168.4.3:10000 to 169.1.209.22:3478
+20/10/2009 10:48:59.51 00000908 **MSGSN**  CRawSocket::Send               45 00 38 00 E1 10 00 00 64 11 00 00 C0 A8 04 03 A9 01 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 DA F7 06 00 DA F7 06 00 43 60 00 00 43 60 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:49:00.73 00000924 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:49:00.74 00000924 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 60 00 53 00 00 64 11 17 77 A9 01 D1 16 C0 A8 04 03 0D 96 27 10 00 4C 00 00 01 01 00 30 DA F7 06 00 DA F7 06 00 43 60 00 00 43 60 00 00 00 01 00 08 00 01 27 10 D9 7E F2 27 00 04 00 08 00 01 0D 96 A9 01 D1 16 00 05 00 08 00 01 0D 97 A9 01 D0 1B 80 20 00 08 00 01 D0 CA 03 89 F4 27 
+20/10/2009 10:49:00.75 00000924 **INFO **  CCaptureApi::realThreadProc    From 169.1.209.22:3478 To 192.168.4.3:10000
+20/10/2009 10:49:00.76 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:00.77 00000908 **DEBUG**  CSTUNMsg::Trace                BINDING-RESPONSE
+20/10/2009 10:49:00.78 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:00.79 00000908 **DEBUG**  CSTUNAttribute::Trace          MAPPED_ADDRESS
+20/10/2009 10:49:00.80 00000908 **DEBUG**  CSTUNAttribute::Trace          217.126.242.39.10000
+20/10/2009 10:49:00.81 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:00.82 00000908 **DEBUG**  CSTUNAttribute::Trace          SOURCE_ADDRESS
+20/10/2009 10:49:00.83 00000908 **DEBUG**  CSTUNAttribute::Trace          169.1.209.22.3478
+20/10/2009 10:49:00.84 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:00.85 00000908 **DEBUG**  CSTUNAttribute::Trace          CHANGED_ADDRESS
+20/10/2009 10:49:00.86 00000908 **DEBUG**  CSTUNAttribute::Trace          169.1.208.27.3479
+20/10/2009 10:49:00.87 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:00.88 00000908 **DEBUG**  CSTUNAttribute::Trace          XOR_MAPPED_ADDRESS
+20/10/2009 10:49:00.89 00000908 **DEBUG**  CSTUNAttribute::Trace          3.137.244.39.53450
+20/10/2009 10:49:00.90 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:00.91 00000908 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x000460
+20/10/2009 10:49:00.92 00000908 **DEBUG**  CCaptureApi::Stop              Stoping capture from all to 192.168.4.3 .
+20/10/2009 10:49:01.21 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:49:01.22 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:49:01.23 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( dst host 192.168.4.2 )  and ( dst port 10000 ).
+20/10/2009 10:49:01.24 00000908 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from all to 192.168.4.2 .
+20/10/2009 10:49:01.25 00000908 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x000440
+20/10/2009 10:49:01.27 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:01.28 00000908 **DEBUG**  CSTUNMsg::Trace                BINDING-REQUEST
+20/10/2009 10:49:01.29 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:01.30 00000908 **DEBUG**  CSTUNAttribute::Trace          CHANGE_REQUEST
+20/10/2009 10:49:01.31 00000908 **DEBUG**  CSTUNAttribute::Trace          Change IP: 0 Change Port: 0
+20/10/2009 10:49:01.31 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:01.32 00000908 **DEBUG**  CRawSocket::Send               HANDLE 0x000440 From 192.168.4.2:10000 to 169.1.209.22:3478
+20/10/2009 10:49:01.33 00000908 **MSGSN**  CRawSocket::Send               45 00 38 00 E1 10 00 00 64 11 00 00 C0 A8 04 02 A9 01 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 03 FF 06 00 03 FF 06 00 4A 60 00 00 4A 60 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:49:02.25 00000924 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:49:02.26 00000924 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 60 00 57 00 00 64 11 17 74 A9 01 D1 16 C0 A8 04 02 0D 96 27 10 00 4C 00 00 01 01 00 30 03 FF 06 00 03 FF 06 00 4A 60 00 00 4A 60 00 00 00 01 00 08 00 01 27 10 D9 7E F2 27 00 04 00 08 00 01 0D 96 A9 01 D1 16 00 05 00 08 00 01 0D 97 A9 01 D0 1B 80 20 00 08 00 01 D8 13 DA 81 F4 27 
+20/10/2009 10:49:02.26 00000924 **INFO **  CCaptureApi::realThreadProc    From 169.1.209.22:3478 To 192.168.4.2:10000
+20/10/2009 10:49:02.28 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:02.29 00000908 **DEBUG**  CSTUNMsg::Trace                BINDING-RESPONSE
+20/10/2009 10:49:02.30 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:02.30 00000908 **DEBUG**  CSTUNAttribute::Trace          MAPPED_ADDRESS
+20/10/2009 10:49:02.31 00000908 **DEBUG**  CSTUNAttribute::Trace          217.126.242.39.10000
+20/10/2009 10:49:02.32 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:02.33 00000908 **DEBUG**  CSTUNAttribute::Trace          SOURCE_ADDRESS
+20/10/2009 10:49:02.34 00000908 **DEBUG**  CSTUNAttribute::Trace          169.1.209.22.3478
+20/10/2009 10:49:02.35 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:02.36 00000908 **DEBUG**  CSTUNAttribute::Trace          CHANGED_ADDRESS
+20/10/2009 10:49:02.37 00000908 **DEBUG**  CSTUNAttribute::Trace          169.1.208.27.3479
+20/10/2009 10:49:02.38 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:02.39 00000908 **DEBUG**  CSTUNAttribute::Trace          XOR_MAPPED_ADDRESS
+20/10/2009 10:49:02.40 00000908 **DEBUG**  CSTUNAttribute::Trace          218.129.244.39.55315
+20/10/2009 10:49:02.41 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:02.42 00000908 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x000440
+20/10/2009 10:49:02.44 00000908 **DEBUG**  CCaptureApi::Stop              Stoping capture from all to 192.168.4.2 .
+20/10/2009 10:49:02.78 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Net: 10.0.2.0.
+20/10/2009 10:49:02.79 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Mask: 255.255.255.0.
+20/10/2009 10:49:02.80 00000908 **DEBUG**  CCaptureApi::PrepareCapture    Filter: udp and ( dst host 192.168.4.3 )  and ( dst port 10000 ).
+20/10/2009 10:49:02.81 00000908 **DEBUG**  CCaptureApi::Start             Starting capture on device \Device\NPF_{49822F81-9514-46C6-8E96-545CD3CB7140}. Capturing packes from all to 192.168.4.3 .
+20/10/2009 10:49:03.13 00000908 **DEBUG**  CRawSocket::CreateSender       HANDLE 0x000428
+20/10/2009 10:49:03.14 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:03.15 00000908 **DEBUG**  CSTUNMsg::Trace                BINDING-REQUEST
+20/10/2009 10:49:03.16 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:03.17 00000908 **DEBUG**  CSTUNAttribute::Trace          CHANGE_REQUEST
+20/10/2009 10:49:03.18 00000908 **DEBUG**  CSTUNAttribute::Trace          Change IP: 0 Change Port: 0
+20/10/2009 10:49:03.19 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:03.20 00000908 **DEBUG**  CRawSocket::Send               HANDLE 0x000428 From 192.168.4.3:10000 to 169.1.209.22:3478
+20/10/2009 10:49:03.21 00000908 **MSGSN**  CRawSocket::Send               45 00 38 00 E1 10 00 00 64 11 00 00 C0 A8 04 03 A9 01 D1 16 27 10 0D 96 00 24 00 00 00 01 00 08 53 06 07 00 53 06 07 00 50 60 00 00 50 60 00 00 00 03 00 04 00 00 00 00 
+20/10/2009 10:49:04.03 00000924 **DEBUG**  CCaptureApi::realThreadProc    
+20/10/2009 10:49:04.04 00000924 **MSGRC**  CCaptureApi::realThreadProc    45 00 00 60 00 5B 00 00 64 11 17 6F A9 01 D1 16 C0 A8 04 03 0D 96 27 10 00 4C 00 00 01 01 00 30 53 06 07 00 53 06 07 00 50 60 00 00 50 60 00 00 00 01 00 08 00 01 27 10 D9 7E F2 27 00 04 00 08 00 01 0D 96 A9 01 D1 16 00 05 00 08 00 01 0D 97 A9 01 D0 1B 80 20 00 08 00 01 21 43 8A 78 F5 27 
+20/10/2009 10:49:04.06 00000924 **INFO **  CCaptureApi::realThreadProc    From 169.1.209.22:3478 To 192.168.4.3:10000
+20/10/2009 10:49:04.08 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:04.09 00000908 **DEBUG**  CSTUNMsg::Trace                BINDING-RESPONSE
+20/10/2009 10:49:04.09 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:04.11 00000908 **DEBUG**  CSTUNAttribute::Trace          MAPPED_ADDRESS
+20/10/2009 10:49:04.44 00000908 **DEBUG**  CSTUNAttribute::Trace          217.126.242.39.10000
+20/10/2009 10:49:04.45 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:04.46 00000908 **DEBUG**  CSTUNAttribute::Trace          SOURCE_ADDRESS
+20/10/2009 10:49:04.47 00000908 **DEBUG**  CSTUNAttribute::Trace          169.1.209.22.3478
+20/10/2009 10:49:04.48 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:04.49 00000908 **DEBUG**  CSTUNAttribute::Trace          CHANGED_ADDRESS
+20/10/2009 10:49:04.50 00000908 **DEBUG**  CSTUNAttribute::Trace          169.1.208.27.3479
+20/10/2009 10:49:04.51 00000908 **DEBUG**  CSTUNAttribute::Trace          ---------------------------
+20/10/2009 10:49:04.52 00000908 **DEBUG**  CSTUNAttribute::Trace          XOR_MAPPED_ADDRESS
+20/10/2009 10:49:04.53 00000908 **DEBUG**  CSTUNAttribute::Trace          138.120.245.39.8515
+20/10/2009 10:49:04.54 00000908 **DEBUG**  CSTUNMsg::Trace                ****************************
+20/10/2009 10:49:04.55 00000908 **DEBUG**  CRawSocket::TerminateSender    HANDLE 0x000428
+20/10/2009 10:49:04.56 00000908 **DEBUG**  CCaptureApi::Stop              Stoping capture from all to 192.168.4.3 .
+20/10/2009 10:49:04.58 00000912 **ERROR**  CNATReq3::Test                 NAT with Port Preservation.
+20/10/2009 10:49:04.59 00000912 **ERROR**  CNATReq3::Test                  NAT with Port Overloading.
+20/10/2009 10:49:04.60 00000912 **DEBUG**  CNATReq3::Test                 Terminating port overloading test...
+

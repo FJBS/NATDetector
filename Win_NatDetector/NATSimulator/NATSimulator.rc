@@ -1,0 +1,741 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\NATSimulator.ico"
+IDR_NATSimulatorTYPE    ICON                    "res\\NATSimulatorDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About NATSimulator...",      ID_APP_ABOUT
+    END
+END
+
+IDR_NATSimulatorTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About NATSimulator...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About NATSimulator"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NATSimulator Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_NATSIMULATOR_FORM DIALOGEX 0, 0, 572, 379
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_CANVAS,"SysListView32",LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,71,87,496,289,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_LIST_ELEMENTS,"SysListView32",LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,3,50,66,326,
+                    WS_EX_LEFTSCROLLBAR
+    CONTROL         IDI_ICON_ELEMENT_NAT,IDC_STATIC_LINK,"Static",SS_BITMAP | 
+                    SS_NOTIFY | SS_CENTERIMAGE | WS_TABSTOP,2,27,67,21,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_LIST_MESSAGES,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,71,27,496,58
+    COMBOBOX        IDC_COMBO_DEVICES,67,9,196,57,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TESTS,296,9,167,69,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Run Test...",IDC_BUTTON_RUN_TEST,470,8,66,14
+    GROUPBOX        "",IDC_STATIC,4,0,538,26
+    LTEXT           "Test:",IDC_STATIC,270,9,18,8
+    LTEXT           "Device:",IDC_STATIC,35,9,25,8
+    CONTROL         IDI_ICON_ELEMENT_STUN_CLIENT_VISITED,
+                    IDC_STATIC_RUNNING_TEST,"Static",SS_BITMAP | SS_NOTIFY | 
+                    NOT WS_VISIBLE,5,5,21,20
+END
+
+IDR_MAINFRAME DIALOGEX 0, 0, 330, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Francisco Jose Blazquez Sanchez"
+            VALUE "FileDescription", "NAT Simulator"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "NATSimulator.exe"
+            VALUE "LegalCopyright", " (c) FJBS"
+            VALUE "OriginalFilename", "NATSimulator.exe"
+            VALUE "ProductName", "NAT Simulator"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_NATSIMULATOR_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 570
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 377
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "NAT Simulator"
+    IDR_NATSimulatorTYPE    "\nNATSimulator\nNATSimulator\nNATSimulator Files (*.sim)\n.sim\nNATSimulator.Document\nNATSimulator.Document"
+    IDS_MAPPING_TEST        "Mapping"
+    IDS_FILTERING_TEST      "Filtering"
+    IDS_BINDING_LIFETIME    "Binding Lifetime"
+    IDS_ADDRESS_POOLING_TEST "IP Address Polling"
+    IDS_PORT_OVERLOADING_TEST "Port Overloading"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "NATSimulator"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEST_DLG_VALIDATION_1 
+                            "Select exactly a server and a client to run this test."
+    IDS_TEST_DLG_VALIDATION_2 "Enter time in seconds."
+    IDS_TEST_DLG_VALIDATION_3 
+                            "Select exactly a server and two clients to run this test."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_ELEMENT_STUN_SERVER_VISITED ICON                    "res\\stunsrvvi.ico"
+IDI_ICON_ELEMENT_STUN_SERVER_REAL ICON                    "res\\server_r.ico"
+IDI_ICON_ELEMENT_STUN_SERVER ICON                    "res\\stunsrv.ico"
+IDI_ICON_ELEMENT_STUN_CLIENT_VISITED ICON                    "res\\stunclivi.ico"
+IDI_ICON_ELEMENT_STUN_CLIENT_REAL ICON                    "res\\client_r.ico"
+IDI_ICON_ELEMENT_STUN_CLIENT ICON                    "res\\stuncli.ico"
+IDI_ICON_ELEMENT_NAT_VISITED ICON                    "res\\icon_ele.ico"
+IDI_ICON_ELEMENT_NAT_REAL ICON                    "res\\nat_real.ico"
+IDI_ICON_ELEMENT_NAT    ICON                    "res\\NAT.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_RED_CONNECTOR       BITMAP                  "res\\red_connector.bmp"
+IDB_LINK_FOCUS          BITMAP                  "res\\LinkFocus.bmp"
+IDB_LINK_DISABLE        BITMAP                  "res\\LinkDisable.bmp"
+IDB_LINK_CHECKED        BITMAP                  "res\\LinkCheck.bmp"
+IDB_LINK                BITMAP                  "res\\Link.bmp"
+IDB_BLACK_CONNECTOR     BITMAP                  "res\\blackConnector.bmp"
+IDB_BITMAP_RUNNING1     BITMAP                  "res\\running1.bmp"
+IDB_BITMAP_RUNNING2     BITMAP                  "res\\bitmap_r.bmp"
+IDB_BITMAP_RUNNING3     BITMAP                  "res\\bmp00001.bmp"
+IDB_BITMAP_RUNNING4     BITMAP                  "res\\bmp00002.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_CANVAS MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Mark &All",                   ID_MARKALL
+        MENUITEM "&Unmark All",                 ID_UNMARKALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete Item",                ID_DELETEITEM
+        MENUITEM SEPARATOR
+        MENUITEM "Clean Traffic Marks",         ID_CLEANTRAFFICMARKS
+    END
+END
+
+IDR_MENU_MESSAGES MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Clean",                       ID_CLEAN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_NAT_CONFIGURATION DIALOGEX 0, 0, 378, 257
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "NAT Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Public IPs",-1,7,9,196,118
+    CONTROL         "",IDC_IPADDRESS_PUBLIC,"SysIPAddress32",WS_TABSTOP,69,
+                    24,100,15
+    CONTROL         "",IDC_LIST_PUBLIC_IPS,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,16,47,155,68
+    PUSHBUTTON      "+",IDC_BUTTON_ADD_PUBLIC_IP,177,24,17,14
+    PUSHBUTTON      "-",IDC_BUTTON_DEL_PUBLIC_IP,177,47,17,14
+    GROUPBOX        "Private IPs",-1,7,132,196,118
+    CONTROL         "",IDC_IPADDRESS_PRIVATE,"SysIPAddress32",WS_TABSTOP,69,
+                    149,100,15
+    CONTROL         "",IDC_LIST_PRIVATE_IPS,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,16,173,155,68
+    PUSHBUTTON      "+",IDC_BUTTON_ADD_PRIVATE_IP,178,150,17,14
+    PUSHBUTTON      "-",IDC_BUTTON_DEL_PRIVATE_IP,178,173,17,14
+    LTEXT           "Mapping:",-1,221,20,30,8
+    COMBOBOX        IDC_COMBO_MAPPING,257,19,97,78,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Filtering:",-1,221,39,29,8
+    COMBOBOX        IDC_COMBO_FILTERING,257,38,97,40,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Timeout:",-1,221,60,29,8
+    EDITTEXT        IDC_EDIT_TIMEOUT,257,58,61,14,ES_AUTOHSCROLL
+    LTEXT           "secs.",-1,326,61,18,8
+    CONTROL         "Inbound refresh timeout",IDC_CHECK_INBOUND_REFRESH,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,220,83,
+                    91,10,WS_EX_RIGHT
+    CONTROL         "Port Preservation",IDC_CHECK_PORT_PRESERVATION,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,220,102,68,10,
+                    WS_EX_RIGHT
+    CONTROL         "Port Overloading",IDC_CHECK_PORT_OVERLOADING,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | WS_TABSTOP,220,122,68,10,
+                    WS_EX_RIGHT
+    LTEXT           "Assign IPs",-1,221,143,34,8
+    COMBOBOX        IDC_COMBO_IP_ASSIGN_MODE,257,142,97,40,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,268,235,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,321,235,50,14
+END
+
+IDD_DIALOG_STUN_CLIENT_CONFIGURATION DIALOGEX 0, 0, 287, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "STUN Client Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "IP:",-1,9,8,10,8
+    CONTROL         "",IDC_IP_SERVERA,"SysIPAddress32",WS_TABSTOP,52,8,100,
+                    15
+    LTEXT           "Port:",-1,157,8,17,8
+    EDITTEXT        IDC_EDIT_PORT_SERVERA,177,8,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,177,32,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,230,32,50,14
+END
+
+IDD_DIALOG_STUN_SERVER_CONFIGURATION DIALOGEX 0, 0, 287, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "STUN Server Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "IP Server A:",-1,7,8,40,8
+    CONTROL         "",IDC_IP_SERVERA,"SysIPAddress32",WS_TABSTOP,52,8,100,
+                    15
+    LTEXT           "Port:",-1,157,8,17,8
+    EDITTEXT        IDC_EDIT_PORT_SERVERA,177,8,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "IP Server B",-1,7,26,37,8
+    CONTROL         "",IDC_IP_SERVERB,"SysIPAddress32",WS_TABSTOP,52,26,100,
+                    15
+    LTEXT           "Port:",-1,157,26,17,8
+    EDITTEXT        IDC_EDIT_PORT_SERVERB,177,26,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,177,49,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,230,49,50,14
+END
+
+IDD_DIALOG_REQUIREMET_TEST DIALOGEX 0, 0, 403, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Test"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "",IDC_STATIC_TITLE,7,7,223,15,SS_ENDELLIPSIS,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    GROUPBOX        "STUN Client",-1,7,24,162,110
+    CONTROL         "",IDC_LIST_CLIENTS,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,12,34,151,96
+    GROUPBOX        "STUN Server",-1,176,24,162,110
+    CONTROL         "",IDC_LIST_SERVERS,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,181,34,151,96
+    LTEXT           "Time (seconds):",IDC_STATIC_NUM1,238,7,52,8,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_NUM1,294,7,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE,WS_EX_RIGHT
+    DEFPUSHBUTTON   "OK",IDOK,345,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,345,26,50,14
+END
+
+IDD_DIALOG_NAT_CONNECT DIALOGEX 0, 0, 275, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,218,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,218,24,50,14
+    CONTROL         IDI_ICON_ELEMENT_NAT_REAL,IDC_STATIC_PUBLIC_NAT_1,"Static",
+                    SS_BITMAP | SS_NOTIFY | SS_RIGHTJUST | SS_REALSIZEIMAGE | 
+                    WS_BORDER,111,32,35,32,WS_EX_STATICEDGE
+    CONTROL         IDI_ICON_ELEMENT_NAT_REAL,IDC_STATIC_PRIVATE_NAT_1,
+                    "Static",SS_BITMAP | SS_NOTIFY | SS_RIGHTJUST | 
+                    SS_REALSIZEIMAGE | WS_BORDER,163,32,35,32,
+                    WS_EX_STATICEDGE
+    CONTROL         IDI_ICON_ELEMENT_NAT_REAL,IDC_STATIC_PUBLIC_NAT_2,"Static",
+                    SS_BITMAP | SS_NOTIFY | SS_RIGHTJUST | SS_REALSIZEIMAGE | 
+                    WS_BORDER,111,109,35,32,WS_EX_STATICEDGE
+    CONTROL         IDI_ICON_ELEMENT_NAT_REAL,IDC_STATIC_PRIVATE_NAT_2,
+                    "Static",SS_BITMAP | SS_NOTIFY | SS_RIGHTJUST | 
+                    SS_REALSIZEIMAGE | WS_BORDER,163,109,35,32,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Static",IDC_STATIC_NAT1,7,16,203,60
+    GROUPBOX        "Static",IDC_STATIC_NAT2,7,94,203,60
+    GROUPBOX        "Private",IDC_STATIC,157,7,48,154
+    GROUPBOX        "Public",IDC_STATIC,105,7,48,154
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_NAT_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 371
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG_STUN_CLIENT_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_STUN_SERVER_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_DIALOG_REQUIREMET_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 395
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_DIALOG_NAT_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\NATSimulator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_VSPLIT       CURSOR                  "res\\cursor_l.cur"
+IDC_CURSOR_LINK         CURSOR                  "res\\cursorLink.cur"
+IDC_CURSOR_HSPLIT       CURSOR                  "res\\cursor_v.cur"
+IDC_CURSOR_ARR          CURSOR                  "res\\cursor_Arrow.cur"
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\NATSimulator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
